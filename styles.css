@@ -27,3 +27,11 @@
     font-style: normal;
     font-display: swap;
 }
+
+:root {
+    --primary-color: #1992d4;
+    --secondary-color: #f0b429;
+    --background-color: #e2e8f0;
+
+    ---font-stack: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
