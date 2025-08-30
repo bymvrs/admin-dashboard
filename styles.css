@@ -254,6 +254,10 @@ body {
     gap: 15px;
 }
 
+.trending-container > div:last-child {
+    margin-bottom: 0px;
+}
+
 .trending-container .profile-info {
     display: flex;
     flex-direction: column;
