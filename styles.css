@@ -51,6 +51,7 @@ body {
     "sidebar header header"
     "sidebar main main";
     height: 100vh;
+    font-family: "Roboto", var(---font-stack);
 }
 
 .sidebar {
