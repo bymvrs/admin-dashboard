@@ -181,7 +181,7 @@ body {
 .main-content {
     grid-area: main;
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 3fr 1fr;
     grid-template-areas: 
     "projects announcements"
     "projects trending";
@@ -196,6 +196,7 @@ body {
 
 .projects {
     grid-area: projects;
+    margin-right: 20px;
 }
 
 .projects-container {
@@ -225,6 +226,46 @@ body {
     grid-area: announcements;
 }
 
+.announcements-container {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.announcements-container hr {
+    margin: 20px 0px;
+}
+
 .trending {
     grid-area: trending;
+    margin-top: 20px;
+}
+
+.trending-container {
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+}
+
+.trending-container > div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    gap: 15px;
+}
+
+.trending-container .profile-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.trending-container .profile-info span:first-of-type{
+    font-weight: 700;
+}
+
+.trending-container .profile-photo {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: var(--secondary-color);
 }
