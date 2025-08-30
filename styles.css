@@ -186,6 +186,12 @@ body {
     "projects announcements"
     "projects trending";
     background-color: var(--background-color);
+    padding: 20px 50px 20px 30px;
+}
+
+.main-content h2 {
+    font-size: 1.1rem;
+    margin-bottom: 12px;
 }
 
 .projects {
@@ -194,7 +200,26 @@ body {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    font-size: 0.9rem;
+    gap: 20px;
+}
+
+.projects-container .project {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    border-left: solid 8px var(--secondary-color);
+    border-radius: 10px;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+.projects-container .project .icons {
+    margin-top: auto;
+    display: flex;
+    align-self: flex-end;
+    gap: 20px;
 }
 
 .announcements {
