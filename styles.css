@@ -57,6 +57,32 @@ body {
 .sidebar {
     grid-area: sidebar;
     background-color: var(--primary-color);
+    display: grid;
+    align-content: start;
+    gap: 30px;
+    padding: 20px;
+    color: white;
+    font-weight: 600;
+}
+
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+    font-size: 0.8rem;
+    gap: 10px;
+}
+
+.sidebar-main > div, .sidebar-secondary > div {
+    display: flex;
+    align-items: center;
+}
+
+.sidebar-main > div:not(div:last-child), .sidebar-secondary > div:not(div:last-child) {
+    padding-bottom: 4px;
+}
+
+.sidebar-main > div > img, .sidebar-secondary > div > img {
+    padding-right: 16px;
 }
 
 .header {
