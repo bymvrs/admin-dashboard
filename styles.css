@@ -44,4 +44,47 @@
 
 body {
     line-height: 1.5;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+    grid-template-areas:
+    "sidebar header header"
+    "sidebar main main";
+    height: 100vh;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: var(--primary-color);
+}
+
+.header {
+    grid-area: header;
+}
+
+.main-content {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas: 
+    "projects announcements"
+    "projects trending";
+    background-color: var(--background-color);
+}
+
+.projects {
+    grid-area: projects;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.announcements {
+    grid-area: announcements;
+}
+
+.trending {
+    grid-area: trending;
 }
