@@ -82,6 +82,10 @@ body {
     padding-bottom: 4px;
 }
 
+.sidebar-main > div > *, .sidebar-secondary > div > * {
+    cursor: pointer;
+}
+
 .sidebar-main > div > img, .sidebar-secondary > div > img {
     padding-right: 16px;
 }
@@ -116,6 +120,10 @@ body {
 .profile {
     justify-self: end;
     gap: 20px;
+}
+
+.profile > * {
+    cursor: pointer;
 }
 
 .profile span {
@@ -178,6 +186,10 @@ body {
     cursor: pointer;
 }
 
+.header-bottom .actions button:hover {
+    background-color: #157eb6;
+}
+
 .main-content {
     grid-area: main;
     display: grid;
@@ -222,6 +234,10 @@ body {
     gap: 20px;
 }
 
+.projects-container .project .icons > * {
+    cursor: pointer;
+}
+
 .announcements {
     grid-area: announcements;
 }
@@ -230,6 +246,10 @@ body {
     border-radius: 10px;
     background-color: white;
     padding: 20px;
+}
+
+.announcements-container h3 {
+    cursor: pointer;
 }
 
 .announcements-container hr {
@@ -252,6 +272,10 @@ body {
     align-items: center;
     margin-bottom: 15px;
     gap: 15px;
+}
+
+.trending-container > div > *{
+    cursor: pointer;
 }
 
 .trending-container > div:last-child {
