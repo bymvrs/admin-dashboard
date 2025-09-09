@@ -314,4 +314,5 @@ body {
     height: 40px;
     border-radius: 50px;
     background-color: var(--secondary-color);
+    flex-shrink: 0;
 }
